@@ -7,7 +7,7 @@ Package license: GPL (>= 3)
 
 Feedstock license: BSD 3-Clause
 
-Summary: Estimates both tail area-based false discovery rates (Fdr) as well as local false discovery rates (fdr) for a variety of null models (p-values, z-scores, correlation coefficients, t-scores).  The proportion of null values and the parameters of the null distribution are adaptively estimated from the data.  In addition, the package contains functions for non-parametric density estimation (Grenander estimator), for monotone regression (isotonic regression and antitonic regression with weights), for computing the greatest convex minorant (GCM) and the least concave majorant (LCM), for the half-normal and correlation distributions, and for computing empirical higher criticism (HC) scores and the corresponding decision threshold.
+Summary: Estimates both tail area-based false  discovery rates (Fdr) as well as local false discovery rates (fdr) for a  variety of null models (p-values, z-scores, correlation coefficients, t-scores).  The proportion of null values and the parameters of the null  distribution are adaptively estimated from the data.  In addition, the package  contains functions for non-parametric density estimation (Grenander estimator),  for monotone regression (isotonic regression and antitonic regression with weights), for computing the greatest convex minorant (GCM) and the least concave majorant (LCM),  for the half-normal and correlation distributions, and for computing empirical higher criticism (HC) scores and the corresponding decision threshold.
 
 
 
@@ -16,7 +16,7 @@ Current build status
 
 [![Linux](https://img.shields.io/circleci/project/github/conda-forge/r-fdrtool-feedstock/master.svg?label=Linux)](https://circleci.com/gh/conda-forge/r-fdrtool-feedstock)
 [![OSX](https://img.shields.io/travis/conda-forge/r-fdrtool-feedstock/master.svg?label=macOS)](https://travis-ci.org/conda-forge/r-fdrtool-feedstock)
-![Windows disabled](https://img.shields.io/badge/Windows-disabled-lightgrey.svg)
+[![Windows](https://img.shields.io/appveyor/ci/conda-forge/r-fdrtool-feedstock/master.svg?label=Windows)](https://ci.appveyor.com/project/conda-forge/r-fdrtool-feedstock/branch/master)
 
 Current release info
 ====================

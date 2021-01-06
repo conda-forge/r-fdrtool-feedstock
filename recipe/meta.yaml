@@ -1,4 +1,4 @@
-{% set version = '1.2.15' %}
+{% set version = "1.2.16" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -11,11 +11,11 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/fdrtool_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/fdrtool/fdrtool_{{ version }}.tar.gz
-  sha256: 65f964aa768d0703ceb7a199adc5e79ca79a6d29d7bc053a262eb533697686c0
+  sha256: e7dea648ee018e2c8c8834084051c76f7e8b2b42067772c62035a941c32457a9
 
 build:
-  merge_build_host: True  # [win]
-  number: 1003
+  merge_build_host: true  # [win]
+  number: 0
   skip: true  # [win32]
   rpaths:
     - lib/R/lib/
@@ -44,17 +44,11 @@ test:
 about:
   home: http://strimmerlab.org/software/fdrtool/
   license: GPL (>= 3)
-  summary: Estimates both tail area-based false  discovery rates (Fdr) as well as local false
-    discovery rates (fdr) for a  variety of null models (p-values, z-scores, correlation
-    coefficients, t-scores).  The proportion of null values and the parameters of the
-    null  distribution are adaptively estimated from the data.  In addition, the package  contains
-    functions for non-parametric density estimation (Grenander estimator),  for monotone
-    regression (isotonic regression and antitonic regression with weights), for computing
-    the greatest convex minorant (GCM) and the least concave majorant (LCM),  for the
-    half-normal and correlation distributions, and for computing empirical higher criticism
-    (HC) scores and the corresponding decision threshold.
+  summary: Estimates both tail area-based false  discovery rates (Fdr) as well as local false discovery rates (fdr) for a  variety of null models (p-values, z-scores, correlation coefficients, t-scores).  The proportion of null values and the parameters of the null  distribution are adaptively estimated from the data.  In
+    addition, the package  contains functions for non-parametric density estimation (Grenander estimator),  for monotone regression (isotonic regression and antitonic regression with weights), for computing the greatest convex minorant (GCM) and the least concave majorant (LCM),  for the half-normal and correlation distributions,
+    and for computing empirical higher criticism (HC) scores and the corresponding decision threshold.
   license_family: GPL3
-  license_file: '{{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-3'
+  license_file: {{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-3
 
 extra:
   recipe-maintainers:

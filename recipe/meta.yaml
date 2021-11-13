@@ -1,4 +1,4 @@
-{% set version = "1.2.16" %}
+{% set version = "1.2.17" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,7 +10,7 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/fdrtool_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/fdrtool/fdrtool_{{ version }}.tar.gz
-  sha256: e7dea648ee018e2c8c8834084051c76f7e8b2b42067772c62035a941c32457a9
+  sha256: 3452601adbead9be4820794e3af2666f710fdf9b801186df565b80b43629c5dd
 
 build:
   merge_build_host: true  # [win]

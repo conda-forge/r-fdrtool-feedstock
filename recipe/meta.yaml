@@ -1,4 +1,4 @@
-{% set version = "1.2.17" %}
+{% set version = "1.2.18" %}
 {% set posix = 'm2-' if win else '' %}
 
 package:
@@ -9,10 +9,10 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/fdrtool_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/fdrtool/fdrtool_{{ version }}.tar.gz
-  sha256: 3452601adbead9be4820794e3af2666f710fdf9b801186df565b80b43629c5dd
+  sha256: 649966996bfaa71932eddfb8ab371187377d8b0212548305dd7b18664ae6baef
 
 build:
-  number: 3
+  number: 0
   rpaths:
     - lib/R/lib/
     - lib/
